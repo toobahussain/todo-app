@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    linear-gradient(
+        135deg,
+        #667eea 0%,
+        #764ba2 50%,
+        #6b73ff 100%
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:750px;
+
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:
+    0 8px 32px rgba(31,38,135,.25);
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:25px;
+    font-size:2.3rem;
+    font-weight:600;
+}
+
+.input-section{
+    display:flex;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.input-section input{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:white;
+    font-size:15px;
+}
+
+.input-section input:focus{
+    outline:none;
+    box-shadow:0 0 0 4px rgba(255,255,255,.25);
+}
+
+.input-section button{
+    border:none;
+    padding:15px 24px;
+    border-radius:14px;
+
+    background:white;
+    color:#667eea;
+
+    font-weight:600;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.input-section button:hover{
+    transform:translateY(-3px);
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.stat-card{
+    background:white;
+    border-radius:18px;
+    text-align:center;
+    padding:20px;
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+}
+
+.stat-card h3{
+    color:#666;
+    font-size:15px;
+}
+
+.stat-card span{
+    display:block;
+    font-size:2rem;
+    margin-top:10px;
+    font-weight:700;
+    color:#667eea;
+}
+
+.filters{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.filter-btn{
+    flex:1;
+    border:none;
+    padding:12px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:500;
+    background:rgba(255,255,255,.25);
+    color:white;
+    transition:.3s;
+}
+
+.filter-btn:hover{
+    background:rgba(255,255,255,.35);
+}
+
+.filter-btn.active{
+    background:white;
+    color:#667eea;
+}
+
+.task-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    transition:.3s;
+}
+
+.task-item:hover{
+    transform:translateY(-4px);
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.1);
+}
+
+.task-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.task-left input[type="checkbox"]{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+
+.task-text{
+    font-size:16px;
+    font-weight:500;
+    color:#333;
+}
+
+.completed{
+    text-decoration:line-through;
+    opacity:.5;
+}
+
+small{
+    color:#888;
+}
+
+.delete-btn{
+    border:none;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff6b6b,
+        #ff3b3b
+    );
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    transform:scale(1.05);
+}
+
+#clearAll{
+    width:100%;
+    margin-top:10px;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #222,
+        #111
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#clearAll:hover{
+    transform:translateY(-2px);
+}
+
+.empty-message{
+    text-align:center;
+    color:white;
+    font-size:18px;
+    padding:40px;
+}
+
+.empty-message::before{
+    display:block;
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:25px;
+    }
+
+    .input-section{
+        flex-direction:column;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .filters{
+        flex-direction:column;
+    }
+
+    .task-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .delete-btn{
+        width:100%;
+    }
+}
