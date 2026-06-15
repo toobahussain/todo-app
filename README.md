@@ -1,2 +1,2 @@
 # todo-app
-Interactive To-Do App using HTML, CSS, and Vanilla JavaScript with localStorage
+Interactive To-Do App using HTML, CSS, and JavaScript with localStorage
