@@ -1,6 +1,6 @@
-# 📝 Interactive To-Do App
+# Interactive To-Do App
 
-A simple and responsive To-Do application built using **HTML, CSS, and Vanilla JavaScript**.
+A simple and responsive To-Do application built using **HTML, CSS, and JavaScript**.
 
 ---
 
@@ -18,9 +18,9 @@ A simple and responsive To-Do application built using **HTML, CSS, and Vanilla J
 
 ## Tech Stack
 
-- HTML5
-- CSS3 (Flexbox + Responsive Design)
-- JavaScript (Vanilla)
+- HTML
+- CSS (Flexbox + Responsive Design)
+- JavaScript
 - localStorage API
 
 ---
@@ -32,7 +32,7 @@ A simple and responsive To-Do application built using **HTML, CSS, and Vanilla J
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 
 index.html
@@ -43,13 +43,13 @@ README.md
 
 ---
 
-## 💡 How to Run
+## How to Run
 
 1. Clone the repository
 2. Open `index.html` in browser
 
 ---
 
-## 📌 Author
+## Author
 
 Developed by **[TOOBA]**
