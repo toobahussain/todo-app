@@ -52,4 +52,4 @@ README.md
 
 ## Author
 
-Developed by **[TOOBA]**
+Developed by **Tooba**
